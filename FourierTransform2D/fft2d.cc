@@ -441,8 +441,7 @@ void Transform1Dinverse(Complex* H, int w, Complex* h, int in_start, int row_poi
 
 int main(int argc, char** argv)
 {
-  //string fn("Tower.txt"); // default file 
-  string fn("Unit_test.txt"); // default file name
+  string fn("Tower.txt"); // default file 
   if (argc > 1) fn = string(argv[1]);  // if name specified on cmd line
   Transform2D(fn.c_str(),argc,argv); // Perform the transform.
 }  
